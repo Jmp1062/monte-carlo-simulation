@@ -2,6 +2,12 @@
 
 Run 1 billion Monte Carlo paths across 2,000 cloud workers at the same time, get the aggregated estimate in minutes.
 
+## Try it in Google Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Burla-Cloud/monte-carlo-simulation/blob/main/Burla_MonteCarlo_Demo.ipynb)
+
+Follow along in a notebook - boot a cluster, install Burla, and price an option with 200M Monte Carlo paths in about 3 minutes. No prior Burla knowledge needed.
+
 ## The Problem
 
 You price an exotic option, estimate a VaR, sample from a posterior, or run a physics sim. 1 billion paths on one machine = hours or days. `multiprocessing.Pool` tops out at your laptop's core count. A real HPC cluster means Slurm, MPI, and a shared filesystem.
